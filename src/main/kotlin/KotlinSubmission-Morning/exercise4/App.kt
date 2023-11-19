@@ -1,5 +1,5 @@
 package id.infinitelearning.KotlinSubmission.exercise4
-
+import kotlin.ArithmeticException
 fun main() {
 
 }
@@ -8,3 +8,13 @@ fun main() {
      *
      */
     // Buat di bawah sini
+
+    fun main(args : Array<String>){
+    try{
+        var num = 2 / 0
+    }
+    catch(e: ArithmeticException){
+        // caught and handles it
+        println("Divide by zero not allowed")
+    }
+}
